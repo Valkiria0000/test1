@@ -24,6 +24,14 @@ $grey: #666;
   justify-content: space-between;
   max-width: 820px;
   margin: 0 auto;
+
+  @media (max-width: 900px) {
+    max-width: 600px;
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+  }
 }
 .search {
   &__input {
@@ -44,11 +52,19 @@ $grey: #666;
   border-bottom: 1px solid $grey;
   margin: 0 auto;
   max-width: 820px;
+
+  @media (max-width: 900px) {
+    max-width: 600px;
+  }
   &__menu {
     display: flex;
     list-style-type: none;
     justify-content: center;
     line-height: 30px;
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__link {
@@ -95,8 +111,4 @@ $grey: #666;
     color: $grey;
     font-weight: normal;
   }
-}
-
-.none {
-  display: none;
 }

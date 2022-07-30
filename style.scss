@@ -83,6 +83,9 @@ $grey: #666;
 }
 .section {
   padding-top: 160px;
+  @media (max-width: 900px) {
+    padding-top: 200px;
+  }
 }
 .books {
   display: flex;

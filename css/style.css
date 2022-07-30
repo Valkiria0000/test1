@@ -102,6 +102,11 @@
 .section {
   padding-top: 160px;
 }
+@media (max-width: 900px) {
+  .section {
+    padding-top: 200px;
+  }
+}
 
 .books {
   display: -webkit-box;
